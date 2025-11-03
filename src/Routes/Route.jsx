@@ -30,6 +30,7 @@ export const router = createBrowserRouter([
       {
         path: "/category/:id",
         element: <CategorySingleNews/>,
+        loader: ()=>fetch("/news.json"),
       },
     ],
   },
