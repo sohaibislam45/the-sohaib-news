@@ -3,7 +3,6 @@ import { NavLink } from 'react-router';
 const categoryPromise = fetch("/categories.json").then(res=>res.json())
 const CategoryNews = () => {
     const categories= use(categoryPromise);
-    console.log(categories);
     return (
       <div>
         <h2 className="font-semibold text-accent-200">
